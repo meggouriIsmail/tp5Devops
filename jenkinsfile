@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "meggouriIsmail/tp5Devops"
+    registry = "meggouriIsmail/tp5devops"
     registryCredential = 'DockerHub'
     dockerImage = ''
     gitBranch = 'main'
@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git branch: "${gitBranch}", url: 'https://github.com/meggouriIsmail/tp5Devops.git'
+        git branch: "${gitBranch}", url: 'https://github.com/meggouriIsmail/tp5devops.git'
       }
     }
     stage('Building image') {
