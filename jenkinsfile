@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "meggouri/tp5devops"
+    registry = "meggouriIsmail/tp5Devops"
     registryCredential = 'DockerHub'
     dockerImage = ''
     gitBranch = 'main'
